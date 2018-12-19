@@ -438,6 +438,8 @@ header ul li a {
     color: #EBCB80;
     font-size: 40px;
     background: #363636;
+
+    animation: spin 5s infinite;
 }
 
 .place:hover{
@@ -681,6 +683,14 @@ button:hover, input[type="button"]:hover, button[type="submit"]:hover {
     }
 }
 
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 
 
 /*end of the effect and animation */
