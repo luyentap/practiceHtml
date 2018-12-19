@@ -48,13 +48,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="5698" />
+          <entry key="css" value="5725" />
           <entry key="html" value="3031" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="5698" />
+          <entry key="CSS" value="5725" />
           <entry key="HTML" value="3031" />
         </counts>
       </usages-collector>
@@ -74,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="441" column="31" selection-start-line="441" selection-start-column="31" selection-end-line="441" selection-end-column="31" />
+            <state relative-caret-position="228">
+              <caret line="533" column="22" selection-start-line="533" selection-start-column="22" selection-end-line="533" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -118,6 +118,8 @@
       <find>arrow</find>
       <find>arr</find>
       <find>comment</find>
+      <find>input</find>
+      <find>account</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,12 +213,12 @@
       <workItem from="1545008538443" duration="11030000" />
       <workItem from="1545027909127" duration="3944000" />
       <workItem from="1545182585280" duration="7407000" />
-      <workItem from="1545211118795" duration="1382000" />
+      <workItem from="1545211118795" duration="1771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51793000" />
+    <option name="totallyTimeSpent" value="52182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -286,8 +288,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="441" column="31" selection-start-line="441" selection-start-column="31" selection-end-line="441" selection-end-column="31" />
+        <state relative-caret-position="228">
+          <caret line="533" column="22" selection-start-line="533" selection-start-column="22" selection-end-line="533" selection-end-column="22" />
         </state>
       </provider>
     </entry>
