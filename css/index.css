@@ -313,6 +313,8 @@ header ul li a {
 .comment {
     text-align: center;
     padding: 40px;
+
+    position: relative;
 }
 
 
@@ -337,11 +339,24 @@ header ul li a {
 
 }
 
-.arrow {
+.arrow_left,.arrow_right {
     border: 2px solid #E6E6E6;
-    padding: 3px;
+    padding: 5px;
+    border: solid 1px lavender;
+    border-radius: 50%;
+
 }
 
+.arrow_left{
+    position: absolute;
+    left: 20%;
+    top:50%;
+}
+.arrow_right{
+    position: absolute;
+    right: 20%;
+    top:50%;
+}
 /*********** place *************/
 .places {
 
@@ -665,5 +680,7 @@ button:hover, input[type="button"]:hover, button[type="submit"]:hover {
         opacity: 1;
     }
 }
+
+
 
 /*end of the effect and animation */
