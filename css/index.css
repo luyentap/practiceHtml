@@ -11,7 +11,8 @@ html, body {
 }
 
 p {
-    font-family: "Times New Roman";
+    /*font-family: "Times New Roman";*/
+    font-family: "Century Gothic"   ;
 }
 .hidden{
     display: none;
@@ -35,11 +36,12 @@ header {
     position: relative;
     background-color: #4B4B4B;
     position: fixed;
-    z-index: 2;
+    z-index: 999;
 
-    /*mix-blend-mode: color;*/
+    mix-blend-mode: hard-light;
 
 }
+
 
 .menu .logo {
     padding-left: 20px;
@@ -64,10 +66,11 @@ header {
 }
 
 header ul li {
+    overflow: hidden;
     margin: 8px;
 
     /*border: solid 1px #EBCB80;*/
-    border-radius: 50px;
+    /*border-radius: 50px;*/
 }
 
 header ul li a {
@@ -153,6 +156,13 @@ header ul li a {
     background: #999999;
 
 }
+
+/*scroll change menu */
+/*html::-webkit-scrollbar .menu{*/
+    /*z-index:99999;*/
+    /*mix-blend-mode: revert;*/
+    /*color:red;*/
+/*}*/
 
 /**********our us ***********/
 .our-team {
@@ -430,6 +440,7 @@ header ul li a {
     font-size: 16px;
     margin: 0;
 
+    font-family: "Century Gothic";
 }
 
 .place-front .place-intro .description {
@@ -437,6 +448,7 @@ header ul li a {
     margin: 2px;
     font-weight: lighter;
 }
+
 
 .place-back button {
     display: none;
@@ -466,7 +478,10 @@ header ul li a {
 .place:hover img{
     transform: scale(1.5);
     transition: 0.1s;
+}
 
+.place:hover .place-intro{
+    opacity: 0;
 }
 
     /***********create an account**************/
@@ -699,8 +714,21 @@ footer ul li a {
 }   
 
 /*start of the effect and animate*/
-ul li:hover {
-    background: #EBCB80;
+ul li:hover a {
+    color: #EBCB80;
+    position: relative;
+
+}
+ul li:hover a::after{
+    align-self: center;
+    content: '______';
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    bottom: -10px;
+
+    animation: leftToRight 1s infinite;
+
 }
 
 button:hover, input[type="button"]:hover, button[type="submit"]:hover {
