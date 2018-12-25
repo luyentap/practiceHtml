@@ -79,10 +79,10 @@ header ul li a {
 }
 
 .menu .menu-active {
-    border: 2px solid #FFFFFF;
+    border: 1px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 30px;
-    padding: 5px;
+    padding: 4px;
 }
 
 .intro {
@@ -93,7 +93,7 @@ header ul li a {
     top: 50%;
     transform: translate(-50%, -50%);
 
-    animation: leftToRight 5s normal;
+    animation:   leftToRight 5s normal;
 }
 
 .intro h3 {
@@ -646,6 +646,66 @@ footer ul li a {
     color: white;
 }
 
+
+/*********social**************/
+.socials{
+    z-index: 99999;
+
+    position: absolute;
+    top:20vh;
+    right: 50px;
+}
+.social-list{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+.social {
+    padding: 5px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+.fa-skype{
+    background: #55ACEE;
+    color: white;
+}
+
+.social:hover{
+    opacity: 0.8;
+}
 /****************** Responsive Website*******************/
 @media only screen and (max-width: 600px) {
 
@@ -711,7 +771,11 @@ footer ul li a {
         /*flex-grow: 1;*/
     }
 
-}   
+    .social-list{
+        display: none;
+    }
+
+}
 
 /*start of the effect and animate*/
 ul li:hover a {
@@ -721,7 +785,7 @@ ul li:hover a {
 }
 ul li:hover a::after{
     align-self: center;
-    content: '______';
+    content: '_________';
     position: absolute;
     left:50%;
     transform: translate(-50%);
