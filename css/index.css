@@ -11,6 +11,9 @@ html, body {
 p {
     font-family: "Times New Roman";
 }
+.hidden{
+    display: none;
+}
 
 /*end of the common */
 
@@ -137,14 +140,19 @@ header ul li a {
 
 }
 
-.intro .img-intro {
+.intro .icon-intro {
     display: flex;
 }
 
-.intro .img-intro img {
+.intro .icon-intro i {
+    text-align: center;
     margin: 30px;
     flex-wrap: wrap;
-    width: 15%;
+    /*width: 15%;*/
+    font-size: 10vh;
+    color: white;
+    border-radius: 60%;
+    background: #999999;
 
 }
 
@@ -561,6 +569,7 @@ header ul li a {
 
 .information p {
     font-size: 16px;
+    font-family: Kokila;
 }
 
 .information .left {
@@ -618,21 +627,30 @@ footer ul li a {
 
 /****************** Responsive Website*******************/
 @media only screen and (max-width: 600px) {
-    .menu ul {
+
+    .menu ul li{
+        display: none;
+    }
+    .hidden{
         display: block;
     }
+    /*.menu ul {*/
+        /*display: block;*/
+    /*}*/
 
     .our-team .list-member .member {
         width: 100%;
     }
 
     .list-plan{
+        display: flex;
         flex-direction: column;
+        /*justify-content: center;*/
+        align-items: center;
     }
-    .list-plan .plan {
-        width: 60%;
+    .list-plan>.plan {
+        width: 50%;
         margin-bottom: 5vh;
-        align-content: center;
 
 
     }
@@ -640,12 +658,39 @@ footer ul li a {
     .list-place .place {
         width: 49%;
     }
-
-    .about_us .center {
-
+    .information{
+        display: flex;
+        flex-direction: row;
+        /*flex-wrap: wrap;*/
+        align-items: center;
+        overflow: hidden;
     }
 
-}
+    .information>.center {
+        order:-1;
+        align-self: start;
+        border: solid 1px;
+
+
+    }
+    .information>.left{
+        align-self: end;
+
+        /*background: blue;*/
+        /*margin: 10px 0 0 2%;*/
+        /*flex-grow: 1;*/
+
+    }
+    .information>.right{
+        align-self: end;
+
+        /*display: inline-block;*/
+        /*background: blue;*/
+        /*margin: 10px 0 0 2%;*/
+        /*flex-grow: 1;*/
+    }
+
+}   
 
 /*start of the effect and animate*/
 ul li:hover {
