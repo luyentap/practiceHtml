@@ -6,6 +6,8 @@ html, body {
     font-family: SansSerif;
     height: 100%;
     width: 100%;
+
+    scroll-behavior: smooth; /* click link <a href="#id"/> slow*/
 }
 
 p {
@@ -35,15 +37,11 @@ header {
     position: fixed;
     z-index: 2;
 
-    mix-blend-mode: color;
+    /*mix-blend-mode: color;*/
+
 }
 
 .menu .logo {
-    /*position: absolute;*/
-    /*width: 136px;*/
-    /*height: 29px;*/
-    /*left: 31px;*/
-    /*top: 37px;*/
     padding-left: 20px;
 
     font-family: Roboto;
@@ -172,15 +170,20 @@ header ul li a {
     display: flex;
     flex-wrap: wrap;
 
-
+    justify-content: center;
 }
 
 .list-member .member {
+    flex-basis: 30%;
     display: flex;
-    width: 33%;
-
+    /*width: 30%;*/
     margin-bottom: 50px;
+    margin-left: 20px;
+    box-shadow: 2px 1px;
 
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    border-radius: .375rem;
+    border-top:crimson 3px solid;
 }
 
 .member img {
@@ -194,16 +197,19 @@ header ul li a {
 
 .member_info .name {
     font-size: 18px;
+    font-weight: bold;
 }
 
 .member_info .position {
     font-size: 14px;
     margin-bottom: 20px;
+    font-weight: lighter;
 
 }
 
 .member_info .description {
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 1.33rem;
 }
 
 /********plan***************/
@@ -639,7 +645,7 @@ footer ul li a {
     /*}*/
 
     .our-team .list-member .member {
-        width: 100%;
+        flex-basis: 48%;
     }
 
     .list-plan{
